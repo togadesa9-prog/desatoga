@@ -1,0 +1,690 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Desa Toga, Ampibabo, Parigi Moutong | Situs Resmi</title>
+<meta name="description" content="Situs resmi Desa Toga, Kecamatan Ampibabo, Kabupaten Parigi Moutong, Sulawesi Tengah: sejarah desa, visi misi, aparat desa, data penduduk, pertanian, wisata, berita, galeri, dan kontak.">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#064E45">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="id_ID">
+<meta property="og:site_name" content="Desa Toga">
+<meta property="og:title" content="Desa Toga, Ampibabo, Parigi Moutong">
+<meta property="og:description" content="Situs resmi Desa Toga, Kecamatan Ampibabo, Kabupaten Parigi Moutong, Sulawesi Tengah: sejarah desa, visi misi, aparat desa, data penduduk, pertanian, wisata, berita, galeri, dan kontak.">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230B8A7A'/%3E%3Ccircle cx='44' cy='20' r='8' fill='%23FFB830'/%3E%3Cpath d='M0 44 Q16 34 32 44 T64 42 V64 H0Z' fill='%23C4F24B'/%3E%3C/svg%3E">
+<style>body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap">
+<style>
+/* Konsep tata letak: satu halaman bergaya majalah wisata pesisir.
+   Hero panel hijau laut dengan siluet pantai, kartu bento untuk data,
+   kartu miring untuk aparat, galeri campuran ukuran, nav pil mengambang. */
+:root {
+  --bg: #F1FAF5;
+  --surface: #FFFFFF;
+  --ink: #08302D;
+  --muted: #476761;
+  --brand: #0B8A7A;
+  --brand-deep: #064E45;
+  --line: #D3E8DF;
+  --hero-bg: #064E45;
+  --hero-ink: #F2FFF9;
+  --lime: #C4F24B;
+  --on-lime: #08302D;
+  --sun: #FFB830;
+  --coral: #FF6F59;
+  --soft: #E2F5EC;
+  --font-display: "Bricolage Grotesque", "Trebuchet MS", system-ui, sans-serif;
+  --font-body: "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #06201D; --surface: #0B2C29; --ink: #E7F6F1; --muted: #98BDB5;
+    --brand: #3ED3BC; --brand-deep: #0A3B36; --line: #1B4540;
+    --hero-bg: #0A3B36; --soft: #0F3834; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #06201D; --surface: #0B2C29; --ink: #E7F6F1; --muted: #98BDB5;
+  --brand: #3ED3BC; --brand-deep: #0A3B36; --line: #1B4540;
+  --hero-bg: #0A3B36; --soft: #0F3834; color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 88px; }
+body {
+  background: var(--bg); color: var(--ink);
+  font-family: var(--font-body); font-size: 16px; line-height: 1.65;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 0 24px;
+  overflow-x: hidden;
+}
+h1, h2, h3 { font-family: var(--font-display); line-height: 1.05; margin: 0; text-wrap: balance; letter-spacing: -0.02em; }
+p { margin: 0; }
+a { color: inherit; }
+.wrap { max-width: 1120px; margin-inline: auto; }
+:focus-visible { outline: 3px solid var(--sun); outline-offset: 3px; border-radius: 6px; }
+
+/* Navigasi */
+.nav {
+  position: sticky; top: calc(env(safe-area-inset-top, 0px) + 10px); z-index: 20;
+  max-width: 1120px; margin: 10px auto 0;
+  background: color-mix(in srgb, var(--surface) 90%, transparent);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--line); border-radius: 999px;
+  display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  padding: 8px 8px 8px 18px;
+}
+.brand { font-family: var(--font-display); font-weight: 800; font-size: 20px; text-decoration: none; display: flex; align-items: center; gap: 8px; }
+.brand i { width: 14px; height: 14px; border-radius: 50% 50% 50% 0; background: var(--coral); display: inline-block; transform: rotate(-45deg); }
+.links { display: flex; gap: 2px; list-style: none; margin: 0; padding: 0; }
+.links a { display: block; padding: 8px 12px; border-radius: 999px; text-decoration: none; font-weight: 600; font-size: 14px; color: var(--muted); }
+.links a:hover, .links a.on { background: var(--lime); color: var(--on-lime); }
+.menu-btn { display: none; border: 0; background: var(--brand); color: #fff; font: 600 14px var(--font-body); padding: 10px 16px; border-radius: 999px; cursor: pointer; }
+.theme-btn { border: 1px solid var(--line); background: transparent; color: var(--ink); width: 38px; height: 38px; border-radius: 50%; cursor: pointer; font-size: 16px; flex: none; }
+.nav-tools { display: flex; gap: 8px; align-items: center; }
+
+/* Hero */
+.hero {
+  position: relative; overflow: hidden; isolation: isolate;
+  background: var(--hero-bg); color: var(--hero-ink);
+  border-radius: 36px; margin-top: 14px;
+  padding: clamp(36px, 7vw, 84px) clamp(22px, 5vw, 64px) clamp(280px, 32vw, 360px);
+}
+.hero .tag { display: inline-flex; gap: 8px; align-items: center; background: rgba(255,255,255,.12); padding: 6px 14px; border-radius: 999px; font-weight: 600; font-size: 13px; }
+.hero .tag b { width: 8px; height: 8px; border-radius: 50%; background: var(--lime); }
+.hero h1 { font-size: clamp(60px, 15vw, 168px); font-weight: 800; margin-top: 18px; line-height: .86; }
+.hero h1 span { color: var(--lime); }
+.hero .lead { max-width: 520px; margin-top: 22px; font-size: clamp(16px, 2.2vw, 19px); opacity: .92; }
+.cta { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 26px; position: relative; z-index: 2; }
+.btn { display: inline-block; text-decoration: none; font-weight: 700; padding: 13px 22px; border-radius: 999px; font-size: 15px; }
+.btn.lime { background: var(--lime); color: var(--on-lime); }
+.btn.ghost { border: 1.5px solid rgba(255,255,255,.4); color: var(--hero-ink); }
+.btn:hover { transform: translateY(-2px); }
+
+/* Latar ilustrasi hero */
+.bgart { position: absolute; inset: 0; width: 100%; height: 100%; z-index: -2; display: block; }
+.hero::before { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(to bottom, rgba(4,46,40,.6), rgba(4,46,40,0) 58%); }
+
+/* Strip angka */
+.strip { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-top: -34px; position: relative; z-index: 3; padding-inline: clamp(0px, 2vw, 24px); }
+.strip div { background: var(--surface); border: 1px solid var(--line); border-radius: 22px; padding: 16px 18px; }
+.strip b { font-family: var(--font-display); font-size: clamp(24px, 4vw, 36px); display: block; line-height: 1.1; font-variant-numeric: tabular-nums; }
+.strip small { color: var(--muted); font-size: 13px; font-weight: 500; }
+
+/* Seksi */
+section { padding-top: clamp(64px, 9vw, 112px); }
+.eyebrow { display: inline-block; font-weight: 700; font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: var(--brand); margin-bottom: 12px; }
+.sec-title { font-size: clamp(34px, 6vw, 62px); font-weight: 800; max-width: 14ch; }
+.sec-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: end; gap: 16px 40px; margin-bottom: 32px; }
+.sec-head p { max-width: 420px; color: var(--muted); }
+.chip-ex { display: inline-block; background: var(--sun); color: #3B2A00; font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 999px; letter-spacing: .04em; vertical-align: middle; }
+
+/* Sejarah */
+.sejarah { display: grid; grid-template-columns: 1fr 1.1fr; gap: 40px; align-items: start; }
+.sejarah > * { min-width: 0; }
+.prose p + p { margin-top: 16px; }
+.prose { color: var(--muted); max-width: 62ch; }
+.timeline { list-style: none; margin: 0; padding: 0; display: grid; gap: 0; }
+.timeline li { display: grid; grid-template-columns: 72px 1fr; gap: 16px; padding: 18px 0; border-top: 1px solid var(--line); }
+.timeline li:last-child { border-bottom: 1px solid var(--line); }
+.timeline b { font-family: var(--font-display); font-size: 26px; color: var(--brand); font-variant-numeric: tabular-nums; }
+.timeline span { color: var(--muted); }
+
+/* Visi misi */
+.vm { display: grid; grid-template-columns: 1fr 1.2fr; gap: 16px; }
+.vm > * { min-width: 0; }
+.visi { background: var(--lime); color: var(--on-lime); border-radius: 32px; padding: clamp(26px, 4vw, 44px); }
+.visi h3 { font-size: clamp(22px, 3.4vw, 34px); margin-top: 10px; font-weight: 700; line-height: 1.15; }
+.visi .eyebrow { color: var(--on-lime); opacity: .7; }
+.misi { background: var(--surface); border: 1px solid var(--line); border-radius: 32px; padding: clamp(24px, 4vw, 40px); }
+.misi ol { margin: 14px 0 0; padding: 0; list-style: none; display: grid; gap: 14px; counter-reset: m; }
+.misi li { counter-increment: m; display: grid; grid-template-columns: 34px 1fr; gap: 14px; color: var(--muted); }
+.misi li::before { content: counter(m); width: 34px; height: 34px; border-radius: 50%; background: var(--soft); color: var(--brand); display: grid; place-items: center; font-weight: 700; font-family: var(--font-display); }
+
+/* Aparat */
+.aparat { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+.person { background: var(--surface); border: 1px solid var(--line); border-radius: 26px; padding: 18px 18px 20px; display: grid; gap: 14px; }
+.person:nth-child(even) { transform: translateY(14px); }
+.avatar { aspect-ratio: 1; border-radius: 20px; display: grid; place-items: center; font-family: var(--font-display); font-weight: 800; font-size: clamp(40px, 6vw, 64px); color: var(--ink); }
+.person h3 { font-size: 18px; line-height: 1.2; }
+.person p { color: var(--muted); font-size: 14px; margin-top: 2px; }
+.person.lead-p { grid-column: span 2; grid-template-columns: 1fr 1fr; align-items: center; }
+.person.lead-p .avatar { aspect-ratio: 1; }
+.person.lead-p h3 { font-size: 24px; }
+
+/* Penduduk */
+.bento { display: grid; grid-template-columns: repeat(6, 1fr); gap: 14px; }
+.bento > * { min-width: 0; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 28px; padding: 24px; }
+.card h3 { font-size: 20px; margin-bottom: 16px; }
+.c-total { grid-column: span 2; background: var(--brand); color: #fff; border-color: transparent; display: flex; flex-direction: column; justify-content: space-between; gap: 24px; }
+.c-total b { font-family: var(--font-display); font-size: clamp(52px, 8vw, 84px); line-height: .9; font-variant-numeric: tabular-nums; }
+.c-gender { grid-column: span 4; }
+.c-umur { grid-column: span 4; }
+.c-dusun { grid-column: span 2; }
+.split { display: flex; height: 44px; border-radius: 999px; overflow: hidden; font-weight: 700; font-size: 14px; }
+.split span { display: flex; align-items: center; padding: 0 16px; white-space: nowrap; }
+.split .l { background: var(--brand); color: #fff; width: 51%; }
+.split .p { background: var(--coral); color: #2B0800; width: 49%; justify-content: flex-end; }
+.bars { display: grid; gap: 12px; }
+.bar { display: grid; grid-template-columns: 78px 1fr 46px; gap: 12px; align-items: center; font-size: 14px; }
+.bar .track { height: 14px; background: var(--soft); border-radius: 999px; overflow: hidden; }
+.bar .fill { height: 100%; border-radius: 999px; background: var(--brand); }
+.bar:nth-child(2n) .fill { background: var(--sun); }
+.bar em { font-style: normal; font-weight: 700; text-align: right; font-variant-numeric: tabular-nums; }
+.dusun { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.dusun li { display: flex; justify-content: space-between; gap: 8px; padding-bottom: 10px; border-bottom: 1px dashed var(--line); color: var(--muted); }
+.dusun li b { color: var(--ink); font-variant-numeric: tabular-nums; }
+
+/* Pertanian */
+.tabs { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 18px; }
+.tab { border: 1.5px solid var(--line); background: var(--surface); color: var(--ink); font: 600 15px var(--font-body); padding: 10px 20px; border-radius: 999px; cursor: pointer; }
+.tab[aria-selected="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+.panel { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.panel[hidden] { display: none; }
+.panel > * { min-width: 0; }
+.panel .art { border-radius: 28px; min-height: 260px; display: grid; place-items: center; font-family: var(--font-display); font-weight: 800; font-size: clamp(54px, 10vw, 108px); color: rgba(255,255,255,.92); }
+.panel .info { background: var(--surface); border: 1px solid var(--line); border-radius: 28px; padding: clamp(22px, 3.5vw, 36px); display: grid; gap: 18px; align-content: start; }
+.panel .info h3 { font-size: 28px; }
+.panel .info p { color: var(--muted); }
+.facts { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+.facts div { background: var(--soft); border-radius: 18px; padding: 12px 14px; }
+.facts b { display: block; font-family: var(--font-display); font-size: 20px; line-height: 1.2; }
+.facts small { color: var(--muted); font-size: 12px; }
+
+/* Wisata */
+.wisata { display: grid; grid-template-columns: 1.3fr 1fr; grid-template-rows: auto auto; gap: 14px; }
+.wisata > * { min-width: 0; }
+.spot { position: relative; border-radius: 30px; overflow: hidden; min-height: 280px; display: flex; align-items: end; padding: 22px; color: #fff; isolation: isolate; }
+.spot.big { grid-row: span 2; min-height: 420px; }
+.spot svg { position: absolute; inset: 0; width: 100%; height: 100%; z-index: -1; }
+.spot::after { content: ""; position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,20,18,.78), rgba(0,20,18,0) 62%); z-index: -1; }
+.spot h3 { font-size: clamp(24px, 3.4vw, 36px); }
+.spot p { font-size: 14px; opacity: .92; margin-top: 6px; max-width: 38ch; }
+.spot .pill { display: inline-block; background: var(--lime); color: var(--on-lime); font-size: 12px; font-weight: 700; padding: 3px 12px; border-radius: 999px; margin-bottom: 10px; }
+
+/* Berita */
+.news { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 14px; }
+.news > * { min-width: 0; }
+.post { background: var(--surface); border: 1px solid var(--line); border-radius: 28px; padding: 22px; display: flex; flex-direction: column; gap: 12px; text-decoration: none; }
+.post:hover { border-color: var(--brand); }
+.post .cat { align-self: start; font-size: 12px; font-weight: 700; padding: 4px 12px; border-radius: 999px; background: var(--soft); color: var(--brand); }
+.post h3 { font-size: 22px; line-height: 1.2; }
+.post p { color: var(--muted); font-size: 15px; }
+.post time { margin-top: auto; font-size: 13px; color: var(--muted); font-weight: 600; }
+.post.feat { background: var(--coral); border-color: transparent; color: #2B0800; }
+.post.feat .cat { background: rgba(255,255,255,.55); color: #2B0800; }
+.post.feat p, .post.feat time { color: #3C1208; }
+.post.feat h3 { font-size: clamp(26px, 3.6vw, 36px); }
+
+/* Galeri */
+.gallery { columns: 3; column-gap: 14px; }
+.shot { break-inside: avoid; margin: 0 0 14px; border-radius: 24px; overflow: hidden; position: relative; }
+.shot svg { display: block; width: 100%; height: auto; }
+.shot figcaption { position: absolute; left: 12px; bottom: 12px; background: rgba(0,25,22,.62); color: #fff; font-size: 12px; font-weight: 600; padding: 4px 12px; border-radius: 999px; }
+
+/* Kontak */
+.kontak { display: grid; grid-template-columns: 1.1fr 1fr; gap: 14px; }
+.kontak > * { min-width: 0; }
+.kontak .big { background: var(--hero-bg); color: var(--hero-ink); border-radius: 32px; padding: clamp(26px, 4vw, 48px); display: grid; gap: 18px; align-content: start; }
+.kontak .big h2 { font-size: clamp(34px, 6vw, 60px); font-weight: 800; }
+.kontak .big h2 span { color: var(--lime); }
+.rows { display: grid; gap: 12px; }
+.row { background: var(--surface); border: 1px solid var(--line); border-radius: 22px; padding: 16px 18px; display: flex; justify-content: space-between; gap: 12px; align-items: center; }
+.row small { color: var(--muted); display: block; font-size: 12px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; }
+.row span { overflow-wrap: anywhere; font-weight: 600; }
+.copy { flex: none; border: 1.5px solid var(--line); background: transparent; color: var(--ink); font: 600 13px var(--font-body); padding: 8px 14px; border-radius: 999px; cursor: pointer; }
+.copy:hover { background: var(--lime); color: var(--on-lime); border-color: var(--lime); }
+
+footer { margin-top: 72px; padding-top: 24px; border-top: 1px solid var(--line); display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 24px; color: var(--muted); font-size: 14px; }
+
+/* Responsif */
+@media (max-width: 900px) {
+  .menu-btn { display: block; }
+  .links { display: none; position: absolute; top: calc(100% + 8px); left: 0; right: 0; flex-direction: column; background: var(--surface); border: 1px solid var(--line); border-radius: 24px; padding: 10px; }
+  .links.open { display: flex; }
+  .links a { padding: 12px 16px; font-size: 16px; }
+  .sejarah, .vm, .panel, .wisata, .kontak { grid-template-columns: 1fr; }
+  .spot.big { grid-row: auto; min-height: 340px; }
+  .aparat { grid-template-columns: repeat(2, 1fr); }
+  .person.lead-p { grid-column: span 2; }
+  .strip { grid-template-columns: repeat(2, 1fr); }
+  .bento { grid-template-columns: 1fr; }
+  .c-total, .c-gender, .c-umur, .c-dusun { grid-column: auto; }
+  .news { grid-template-columns: 1fr; }
+  .gallery { columns: 2; }
+}
+@media (max-width: 520px) {
+  .person.lead-p { grid-template-columns: 1fr; }
+  .person:nth-child(even) { transform: none; }
+  .facts { grid-template-columns: 1fr; }
+  .bar { grid-template-columns: 64px 1fr 40px; }
+  .timeline li { grid-template-columns: 58px 1fr; }
+  .row { flex-direction: column; align-items: start; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .btn:hover { transform: none; }
+}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "GovernmentOrganization",
+  "name": "Pemerintah Desa Toga",
+  "description": "Pemerintah Desa Toga, Kecamatan Ampibabo, Kabupaten Parigi Moutong, Sulawesi Tengah.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Ampibabo",
+    "addressRegion": "Sulawesi Tengah",
+    "addressCountry": "ID"
+  }
+}
+</script>
+</head>
+<body>
+
+<header class="nav" id="top">
+  <a class="brand" href="#top"><i></i>Desa Toga</a>
+  <ul class="links" id="links">
+    <li><a href="#sejarah">Sejarah</a></li>
+    <li><a href="#visi">Visi Misi</a></li>
+    <li><a href="#aparat">Aparat</a></li>
+    <li><a href="#penduduk">Penduduk</a></li>
+    <li><a href="#pertanian">Pertanian</a></li>
+    <li><a href="#wisata">Wisata</a></li>
+    <li><a href="#berita">Berita</a></li>
+    <li><a href="#galeri">Galeri</a></li>
+    <li><a href="#kontak">Kontak</a></li>
+  </ul>
+  <div class="nav-tools">
+    <button class="theme-btn" id="themeBtn" type="button" aria-label="Ganti tema terang atau gelap">◐</button>
+    <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="links">Menu</button>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="hero">
+<svg class="bgart" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMax slice" aria-hidden="true" focusable="false">
+<defs><linearGradient id="skyg" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#063F39"/><stop offset=".55" stop-color="#1E7C73"/><stop offset="1" stop-color="#8CCFC2"/>
+</linearGradient></defs>
+<rect width="1200" height="560" fill="url(#skyg)"/>
+<ellipse cx="200" cy="150" rx="190" ry="40" fill="#fff" opacity="0.14"/><ellipse cx="330" cy="182" rx="140" ry="32" fill="#fff" opacity="0.1"/><ellipse cx="820" cy="112" rx="210" ry="36" fill="#fff" opacity="0.13"/><ellipse cx="990" cy="168" rx="150" ry="30" fill="#fff" opacity="0.1"/><ellipse cx="560" cy="258" rx="170" ry="28" fill="#fff" opacity="0.12"/><ellipse cx="110" cy="320" rx="150" ry="30" fill="#fff" opacity="0.1"/><ellipse cx="1030" cy="340" rx="170" ry="32" fill="#fff" opacity="0.12"/><ellipse cx="720" cy="380" rx="150" ry="24" fill="#fff" opacity="0.1"/><ellipse cx="400" cy="70" rx="120" ry="22" fill="#fff" opacity="0.1"/>
+<g transform="translate(0 40)">
+<path d="M300 470 L430 410 L520 440 L640 392 L760 445 L880 470Z" fill="#2C7F78" opacity=".75"/>
+<path d="M360 475 L470 430 L560 452 L650 415 L760 458 L840 475Z" fill="#1B6760"/>
+<path d="M380 480 Q420 452 460 470 Q500 446 540 468 Q590 440 640 466 Q700 444 750 468 Q800 452 830 480Z" fill="#124F48"/>
+<rect x="0" y="468" width="1200" height="340" fill="#8FA878"/>
+<path d="M0 596 L400 560 L800 560 L1200 598 L1200 810 L0 810Z" fill="#BDB6A3"/>
+<ellipse cx="389" cy="592" rx="5.3" ry="2.2" fill="#A39D8B"/><ellipse cx="439" cy="580" rx="4.5" ry="1.9" fill="#CFC9B6"/><ellipse cx="502" cy="604" rx="4.8" ry="2.0" fill="#A39D8B"/><ellipse cx="1137" cy="656" rx="4.9" ry="2.1" fill="#CFC9B6"/><ellipse cx="60" cy="601" rx="4.8" ry="2.1" fill="#CFC9B6"/><ellipse cx="173" cy="588" rx="3.5" ry="2.3" fill="#D7D1BF"/><ellipse cx="124" cy="648" rx="2.9" ry="1.3" fill="#A39D8B"/><ellipse cx="677" cy="654" rx="4.5" ry="2.5" fill="#9C9684"/><ellipse cx="559" cy="695" rx="3.8" ry="1.8" fill="#D7D1BF"/><ellipse cx="839" cy="604" rx="4.9" ry="2.7" fill="#9C9684"/><ellipse cx="875" cy="610" rx="6.9" ry="3.0" fill="#CFC9B6"/><ellipse cx="198" cy="617" rx="6.7" ry="3.5" fill="#A39D8B"/><ellipse cx="917" cy="648" rx="6.4" ry="3.2" fill="#9C9684"/><ellipse cx="713" cy="649" rx="4.3" ry="2.8" fill="#9C9684"/><ellipse cx="569" cy="660" rx="2.3" ry="1.4" fill="#CFC9B6"/><ellipse cx="342" cy="623" rx="5.3" ry="2.2" fill="#CFC9B6"/><ellipse cx="427" cy="653" rx="4.5" ry="2.1" fill="#9C9684"/><ellipse cx="155" cy="605" rx="4.0" ry="2.6" fill="#A39D8B"/><ellipse cx="200" cy="625" rx="3.4" ry="1.5" fill="#CFC9B6"/><ellipse cx="1037" cy="609" rx="4.1" ry="2.1" fill="#CFC9B6"/><ellipse cx="1149" cy="592" rx="2.9" ry="1.4" fill="#D7D1BF"/><ellipse cx="14" cy="683" rx="2.9" ry="1.4" fill="#D7D1BF"/><ellipse cx="503" cy="621" rx="4.8" ry="3.3" fill="#A39D8B"/><ellipse cx="548" cy="688" rx="6.8" ry="4.1" fill="#CFC9B6"/><ellipse cx="478" cy="624" rx="4.4" ry="2.3" fill="#D7D1BF"/><ellipse cx="81" cy="600" rx="2.8" ry="1.4" fill="#A39D8B"/><ellipse cx="123" cy="647" rx="4.7" ry="3.2" fill="#A39D8B"/><ellipse cx="84" cy="600" rx="3.9" ry="2.3" fill="#9C9684"/><ellipse cx="723" cy="635" rx="2.6" ry="1.4" fill="#CFC9B6"/><ellipse cx="576" cy="613" rx="2.7" ry="1.7" fill="#9C9684"/><ellipse cx="574" cy="664" rx="4.6" ry="2.1" fill="#9C9684"/><ellipse cx="176" cy="644" rx="2.1" ry="1.2" fill="#A39D8B"/><ellipse cx="835" cy="607" rx="3.8" ry="1.7" fill="#D7D1BF"/><ellipse cx="639" cy="676" rx="3.6" ry="1.7" fill="#D7D1BF"/><ellipse cx="967" cy="681" rx="5.7" ry="2.7" fill="#CFC9B6"/><ellipse cx="427" cy="576" rx="2.1" ry="1.0" fill="#9C9684"/><ellipse cx="232" cy="652" rx="3.7" ry="2.4" fill="#9C9684"/><ellipse cx="1146" cy="620" rx="3.1" ry="1.5" fill="#D7D1BF"/><ellipse cx="405" cy="636" rx="6.9" ry="4.0" fill="#A39D8B"/><ellipse cx="575" cy="659" rx="6.0" ry="2.6" fill="#A39D8B"/><ellipse cx="1092" cy="676" rx="5.8" ry="3.1" fill="#D7D1BF"/><ellipse cx="521" cy="657" rx="2.4" ry="1.7" fill="#CFC9B6"/><ellipse cx="556" cy="671" rx="2.4" ry="1.1" fill="#D7D1BF"/><ellipse cx="33" cy="651" rx="4.3" ry="2.6" fill="#CFC9B6"/><ellipse cx="789" cy="619" rx="4.7" ry="2.1" fill="#A39D8B"/><ellipse cx="959" cy="669" rx="2.5" ry="1.6" fill="#D7D1BF"/><ellipse cx="521" cy="688" rx="6.1" ry="2.8" fill="#9C9684"/><ellipse cx="255" cy="639" rx="5.8" ry="2.9" fill="#CFC9B6"/><ellipse cx="1001" cy="580" rx="5.7" ry="3.8" fill="#CFC9B6"/><ellipse cx="993" cy="689" rx="2.7" ry="1.2" fill="#A39D8B"/><ellipse cx="1047" cy="675" rx="5.0" ry="3.2" fill="#D7D1BF"/><ellipse cx="207" cy="635" rx="5.6" ry="3.2" fill="#9C9684"/><ellipse cx="819" cy="643" rx="4.4" ry="2.8" fill="#A39D8B"/><ellipse cx="298" cy="609" rx="5.9" ry="3.2" fill="#A39D8B"/><ellipse cx="912" cy="693" rx="4.2" ry="2.5" fill="#D7D1BF"/><ellipse cx="831" cy="632" rx="4.7" ry="2.5" fill="#D7D1BF"/><ellipse cx="839" cy="689" rx="6.7" ry="3.2" fill="#D7D1BF"/><ellipse cx="1008" cy="590" rx="2.6" ry="1.4" fill="#A39D8B"/><ellipse cx="805" cy="629" rx="3.1" ry="1.5" fill="#A39D8B"/><ellipse cx="1076" cy="593" rx="5.6" ry="3.3" fill="#D7D1BF"/><ellipse cx="304" cy="590" rx="4.3" ry="2.7" fill="#A39D8B"/><ellipse cx="478" cy="637" rx="6.9" ry="4.5" fill="#D7D1BF"/><ellipse cx="848" cy="704" rx="4.0" ry="2.1" fill="#9C9684"/><ellipse cx="382" cy="668" rx="2.1" ry="1.2" fill="#CFC9B6"/><ellipse cx="844" cy="623" rx="4.6" ry="2.2" fill="#A39D8B"/><ellipse cx="135" cy="694" rx="3.1" ry="2.1" fill="#A39D8B"/><ellipse cx="319" cy="577" rx="5.9" ry="2.8" fill="#D7D1BF"/><ellipse cx="984" cy="685" rx="5.4" ry="3.7" fill="#CFC9B6"/><ellipse cx="179" cy="694" rx="4.9" ry="3.0" fill="#A39D8B"/><ellipse cx="335" cy="678" rx="2.9" ry="2.0" fill="#9C9684"/><ellipse cx="1126" cy="656" rx="6.0" ry="2.6" fill="#D7D1BF"/><ellipse cx="80" cy="687" rx="4.3" ry="2.1" fill="#CFC9B6"/><ellipse cx="1112" cy="608" rx="2.6" ry="1.5" fill="#D7D1BF"/><ellipse cx="1126" cy="701" rx="3.3" ry="1.5" fill="#9C9684"/><ellipse cx="754" cy="643" rx="3.0" ry="1.6" fill="#D7D1BF"/><ellipse cx="325" cy="679" rx="7.0" ry="2.9" fill="#A39D8B"/><ellipse cx="880" cy="645" rx="2.9" ry="1.6" fill="#CFC9B6"/><ellipse cx="128" cy="681" rx="4.2" ry="2.3" fill="#CFC9B6"/><ellipse cx="1164" cy="613" rx="3.1" ry="1.4" fill="#D7D1BF"/><ellipse cx="999" cy="666" rx="5.2" ry="2.7" fill="#9C9684"/>
+<path d="M0 596 L330 552 L352 560 L0 618Z" fill="#86B36B"/>
+
+<polygon points="830,498 935,498 935,566 830,566" fill="#BCD6C0"/>
+<polygon points="790,500 935,472 935,506 790,522" fill="#9B4A3A"/>
+<rect x="965" y="470" width="240" height="150" fill="#A8B7B0"/>
+<path d="M965 500H1205M965 530H1205M965 560H1205M965 590H1205" stroke="#8DA098" stroke-width="2"/>
+<polygon points="925,484 1045,404 1205,398 1205,444 1050,448 935,494" fill="#7CA0A8"/>
+<polygon points="925,484 935,494 1050,448 1205,444 1205,452 1050,458 925,500" fill="#3F6068"/>
+<rect x="1110" y="505" width="44" height="78" fill="#2A403C" stroke="#C9D6D0" stroke-width="3"/>
+<rect x="1000" y="520" width="26" height="36" fill="#8FA9E0"/><rect x="1000" y="534" width="26" height="5" fill="#fff" opacity=".8"/>
+<ellipse cx="880" cy="578" rx="62" ry="30" fill="#2F8F55"/><ellipse cx="945" cy="592" rx="52" ry="26" fill="#1F6B45"/>
+<circle cx="900" cy="566" r="8" fill="#8E2B4A"/><circle cx="918" cy="574" r="6" fill="#8E2B4A"/>
+<circle cx="700" cy="482" r="38" fill="#2D8A52"/><circle cx="765" cy="464" r="48" fill="#25794A"/><circle cx="830" cy="480" r="42" fill="#2D8A52"/>
+
+<rect x="0" y="514" width="218" height="82" fill="#AEBBB4"/>
+<path d="M0 540H218M0 566H218" stroke="#93A39B" stroke-width="2"/>
+<polygon points="0,488 236,526 236,542 0,512" fill="#6E9099"/>
+<rect x="150" y="546" width="34" height="50" fill="#6B5A4A"/>
+<path d="M115 596 L100 546 L118 576 L126 541 L130 581 L146 554 L138 598Z" fill="#8E2B4A"/>
+
+<rect x="330" y="455" width="14" height="76" fill="#5A3B27"/>
+<circle cx="280" cy="422" r="58" fill="#1E7A55"/><circle cx="345" cy="397" r="62" fill="#1E7A55"/>
+<circle cx="405" cy="432" r="52" fill="#1E7A55"/><circle cx="320" cy="452" r="46" fill="#1B6F4C"/>
+<circle cx="300" cy="402" r="26" fill="#2F9A62" opacity=".8"/><circle cx="372" cy="382" r="24" fill="#2F9A62" opacity=".8"/>
+
+<polygon points="588,468 622,468 940,652 255,652" fill="#8C9792"/>
+<rect x="0" y="652" width="1200" height="160" fill="#56635F"/>
+<rect x="0" y="650" width="1200" height="3" fill="#3F4B48"/>
+<rect x="0" y="714" width="860" height="7" rx="3" fill="#F2F2EE"/>
+<path d="M0 786 Q200 768 380 780" stroke="#3F4B48" stroke-width="2" fill="none"/>
+
+<rect x="742" y="448" width="6" height="92" fill="#4A3B33"/>
+<rect x="726" y="456" width="38" height="5" fill="#4A3B33"/>
+<circle cx="730" cy="454" r="3" fill="#B7C9C4"/><circle cx="760" cy="454" r="3" fill="#B7C9C4"/>
+
+<g transform="translate(405 574) scale(0.72)">
+<ellipse cx="0" cy="-12" rx="8" ry="13" fill="#1A1A1A"/>
+<path d="M-17 -34 Q0 -50 17 -34 L14 -8 L-14 -8Z" fill="#2A2A2E"/>
+<circle cx="0" cy="-26" r="12" fill="#FF3B30" opacity=".25"/>
+<rect x="-5" y="-31" width="10" height="5" rx="2" fill="#FF3B30"/>
+<rect x="-14" y="-78" width="28" height="46" rx="12" fill="#F4F4EF"/>
+<circle cx="0" cy="-88" r="9" fill="#2B211C"/>
+<path d="M-14 -68 L-22 -42 M14 -68 L22 -42" stroke="#F4F4EF" stroke-width="7" stroke-linecap="round"/>
+</g>
+<g transform="translate(468 606) scale(1.05)">
+<ellipse cx="0" cy="-12" rx="8" ry="13" fill="#1A1A1A"/>
+<path d="M-17 -34 Q0 -50 17 -34 L14 -8 L-14 -8Z" fill="#2A2A2E"/>
+<circle cx="0" cy="-26" r="12" fill="#FF3B30" opacity=".25"/>
+<rect x="-5" y="-31" width="10" height="5" rx="2" fill="#FF3B30"/>
+<rect x="-14" y="-78" width="28" height="46" rx="12" fill="#D13A2C"/>
+<circle cx="0" cy="-88" r="9" fill="#2B211C"/>
+<path d="M-14 -68 L-22 -42 M14 -68 L22 -42" stroke="#D13A2C" stroke-width="7" stroke-linecap="round"/>
+</g>
+
+<rect x="548" y="596" width="112" height="40" rx="16" fill="#5B6B74"/>
+<circle cx="575" cy="620" r="4" fill="#AEBBC2" opacity=".6"/><circle cx="610" cy="626" r="5" fill="#AEBBC2" opacity=".6"/><circle cx="640" cy="618" r="3" fill="#AEBBC2" opacity=".6"/>
+<path d="M556 600 l4 -12 l4 12 M642 602 l3 -10 l5 10 M600 600 l3 -9 l4 9" stroke="#5E8F43" stroke-width="3" fill="none" stroke-linecap="round"/>
+<rect x="591" y="396" width="3" height="70" fill="#3B2E2A"/>
+<rect x="571" y="480" width="60" height="122" fill="#2B5DB0"/>
+<rect x="608" y="480" width="23" height="122" fill="#214C96" opacity=".85"/>
+<rect x="571" y="480" width="6" height="122" fill="#4A7ACD"/>
+<polygon points="562,482 640,482 632,464 570,464" fill="#3568BC"/>
+<rect x="562" y="480" width="78" height="6" fill="#1F4690"/>
+<circle cx="590" cy="525" r="7" fill="#CFE0FA" opacity=".55"/><circle cx="614" cy="540" r="6" fill="#CFE0FA" opacity=".45"/>
+<rect x="580" y="560" width="14" height="20" fill="#7FA0D8" opacity=".35"/><rect x="600" y="505" width="18" height="10" fill="#7FA0D8" opacity=".35"/>
+
+<path d="M745 452 L1015 -60 M745 456 L1130 -60 M745 460 L1210 70" stroke="#0A2623" stroke-width="1.6" fill="none" opacity=".55"/>
+<path d="M-10 330 L1210 238 M-10 338 L1210 246" stroke="#0A2623" stroke-width="1.6" fill="none" opacity=".55"/>
+</g>
+</svg>
+    <span class="tag"><b></b>Kec. Ampibabo · Kab. Parigi Moutong · Sulawesi Tengah</span>
+    <h1>Desa <span>Toga</span></h1>
+    <p class="lead">Selamat datang di situs resmi Desa Toga. Kenali sejarahnya, orang-orangnya, hasil buminya, dan tempat-tempat yang layak Anda kunjungi.</p>
+    <div class="cta">
+      <a class="btn lime" href="#wisata">Jelajahi Wisata</a>
+      <a class="btn ghost" href="#kontak">Hubungi Desa</a>
+    </div>
+  </div>
+
+  <div class="strip">
+    <div><b>2.140</b><small>Jiwa <span class="chip-ex">contoh</span></small></div>
+    <div><b>612</b><small>Kepala keluarga</small></div>
+    <div><b>4</b><small>Dusun</small></div>
+    <div><b>12,4 km²</b><small>Luas wilayah</small></div>
+  </div>
+
+  <section id="sejarah">
+    <div class="sejarah">
+      <div>
+        <span class="eyebrow">Sejarah Desa</span>
+        <h2 class="sec-title">Dari kampung kecil menjadi desa yang tumbuh.</h2>
+      </div>
+      <div>
+        <div class="prose">
+          <p>Tulis di sini asal-usul nama “Toga”, siapa yang pertama membuka kampung, dan bagaimana desa berkembang dari masa ke masa. Cerita dari para sesepuh desa adalah bagian terbaik untuk dimuat di bagian ini.</p>
+          <p>Teks ini masih contoh. Ganti dengan sejarah yang sebenarnya agar warga dan pengunjung mengenal desa lebih dekat.</p>
+        </div>
+        <ul class="timeline" style="margin-top:24px">
+          <li><b>19xx</b><span>Awal pembukaan permukiman oleh warga pertama. <span class="chip-ex">contoh</span></span></li>
+          <li><b>19xx</b><span>Penetapan sebagai desa definitif.</span></li>
+          <li><b>20xx</b><span>Pemekaran dusun dan pembangunan fasilitas umum pertama.</span></li>
+          <li><b>2026</b><span>Peluncuran situs resmi Desa Toga.</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="visi">
+    <div class="sec-head">
+      <div><span class="eyebrow">Visi dan Misi</span><h2 class="sec-title">Arah yang ingin dituju bersama.</h2></div>
+    </div>
+    <div class="vm">
+      <div class="visi">
+        <span class="eyebrow">Visi</span>
+        <h3>“Terwujudnya Desa Toga yang mandiri, sejahtera, dan berbudaya.” <span class="chip-ex">contoh</span></h3>
+      </div>
+      <div class="misi">
+        <span class="eyebrow">Misi</span>
+        <ol>
+          <li>Meningkatkan pelayanan pemerintahan desa yang terbuka dan mudah diakses warga.</li>
+          <li>Mengembangkan hasil pertanian dan perkebunan sebagai penopang ekonomi desa.</li>
+          <li>Mengelola potensi wisata desa secara berkelanjutan bersama masyarakat.</li>
+          <li>Memperkuat pendidikan, kesehatan, dan kegiatan sosial budaya.</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section id="aparat">
+    <div class="sec-head">
+      <div><span class="eyebrow">Pemerintah Desa</span><h2 class="sec-title">Kenali aparat desa Anda.</h2></div>
+      <p>Daftar nama dan jabatan di bawah ini masih contoh. Ganti dengan data aparat Desa Toga yang berlaku.</p>
+    </div>
+    <div class="aparat">
+      <article class="person lead-p">
+        <div class="avatar" style="background:var(--lime)">K</div>
+        <div><h3>Nama Kepala Desa</h3><p>Kepala Desa</p></div>
+      </article>
+      <article class="person"><div class="avatar" style="background:#9FE3D4">S</div><div><h3>Nama Sekretaris</h3><p>Sekretaris Desa</p></div></article>
+      <article class="person"><div class="avatar" style="background:#FFD98A">B</div><div><h3>Nama Bendahara</h3><p>Kaur Keuangan</p></div></article>
+      <article class="person"><div class="avatar" style="background:#FFB4A6">P</div><div><h3>Nama Perencana</h3><p>Kaur Perencanaan</p></div></article>
+      <article class="person"><div class="avatar" style="background:#B9E8A0">G</div><div><h3>Nama Kasi</h3><p>Kasi Pemerintahan</p></div></article>
+      <article class="person"><div class="avatar" style="background:#9FE3D4">L</div><div><h3>Nama Kasi</h3><p>Kasi Pelayanan</p></div></article>
+      <article class="person"><div class="avatar" style="background:#FFD98A">D</div><div><h3>Nama Kadus</h3><p>Kepala Dusun I</p></div></article>
+    </div>
+  </section>
+
+  <section id="penduduk" style="padding-top:clamp(88px,10vw,128px)">
+    <div class="sec-head">
+      <div><span class="eyebrow">Data Penduduk</span><h2 class="sec-title">Desa dalam angka.</h2></div>
+      <p>Angka berikut contoh tampilan. <span class="chip-ex">data contoh</span> Ganti dengan data kependudukan terbaru dari kantor desa.</p>
+    </div>
+    <div class="bento">
+      <div class="card c-total">
+        <h3 style="margin:0;color:#fff">Total penduduk</h3>
+        <div><b>2.140</b><p style="margin-top:8px;opacity:.85">jiwa dalam 612 kepala keluarga</p></div>
+      </div>
+      <div class="card c-gender">
+        <h3>Jenis kelamin</h3>
+        <div class="split"><span class="l">Laki-laki 1.091</span><span class="p">Perempuan 1.049</span></div>
+        <p style="color:var(--muted);margin-top:14px;font-size:14px">Perbandingan jumlah penduduk laki-laki dan perempuan.</p>
+      </div>
+      <div class="card c-umur">
+        <h3>Kelompok usia</h3>
+        <div class="bars">
+          <div class="bar"><span>0–14</span><div class="track"><div class="fill" style="width:24%"></div></div><em>24%</em></div>
+          <div class="bar"><span>15–24</span><div class="track"><div class="fill" style="width:19%"></div></div><em>19%</em></div>
+          <div class="bar"><span>25–44</span><div class="track"><div class="fill" style="width:32%"></div></div><em>32%</em></div>
+          <div class="bar"><span>45–64</span><div class="track"><div class="fill" style="width:18%"></div></div><em>18%</em></div>
+          <div class="bar"><span>65+</span><div class="track"><div class="fill" style="width:7%"></div></div><em>7%</em></div>
+        </div>
+      </div>
+      <div class="card c-dusun">
+        <h3>Per dusun</h3>
+        <ul class="dusun">
+          <li>Dusun I <b>580</b></li>
+          <li>Dusun II <b>512</b></li>
+          <li>Dusun III <b>547</b></li>
+          <li>Dusun IV <b>501</b></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="pertanian">
+    <div class="sec-head">
+      <div><span class="eyebrow">Pertanian dan Perkebunan</span><h2 class="sec-title">Hasil bumi dari tanah Toga.</h2></div>
+      <p>Pilih komoditas untuk melihat ringkasannya. Isi ini contoh dan perlu disesuaikan dengan data desa.</p>
+    </div>
+    <div class="tabs" role="tablist" aria-label="Komoditas">
+      <button class="tab" role="tab" id="t-kelapa" aria-controls="p-kelapa" aria-selected="true" type="button">Kelapa</button>
+      <button class="tab" role="tab" id="t-kakao" aria-controls="p-kakao" aria-selected="false" type="button">Kakao</button>
+      <button class="tab" role="tab" id="t-padi" aria-controls="p-padi" aria-selected="false" type="button">Padi</button>
+      <button class="tab" role="tab" id="t-sayur" aria-controls="p-sayur" aria-selected="false" type="button">Sayur &amp; Buah</button>
+    </div>
+    <div class="panel" role="tabpanel" id="p-kelapa" aria-labelledby="t-kelapa">
+      <div class="art" style="background:linear-gradient(135deg,#0B8A7A,#064E45)">Kelapa</div>
+      <div class="info"><h3>Kelapa</h3><p>Tanaman andalan banyak keluarga petani. Dijual sebagai kelapa butir, kopra, atau diolah menjadi minyak kelapa dan produk rumahan.</p>
+        <div class="facts"><div><b>— ha</b><small>Luas kebun</small></div><div><b>— ton</b><small>Hasil per tahun</small></div><div><b>— KK</b><small>Petani</small></div></div></div>
+    </div>
+    <div class="panel" role="tabpanel" id="p-kakao" aria-labelledby="t-kakao" hidden>
+      <div class="art" style="background:linear-gradient(135deg,#FF6F59,#B23A27)">Kakao</div>
+      <div class="info"><h3>Kakao</h3><p>Biji kakao dijemur dan difermentasi petani sebelum dijual ke pengepul. Ruang tumbuh yang besar untuk kakao fermentasi bernilai lebih tinggi.</p>
+        <div class="facts"><div><b>— ha</b><small>Luas kebun</small></div><div><b>— ton</b><small>Hasil per tahun</small></div><div><b>— KK</b><small>Petani</small></div></div></div>
+    </div>
+    <div class="panel" role="tabpanel" id="p-padi" aria-labelledby="t-padi" hidden>
+      <div class="art" style="background:linear-gradient(135deg,#FFB830,#B97B00)">Padi</div>
+      <div class="info"><h3>Padi</h3><p>Sawah warga memenuhi kebutuhan pangan desa. Kelompok tani mengatur pola tanam dan pembagian air bersama.</p>
+        <div class="facts"><div><b>— ha</b><small>Luas sawah</small></div><div><b>— ton</b><small>Hasil per musim</small></div><div><b>— KT</b><small>Kelompok tani</small></div></div></div>
+    </div>
+    <div class="panel" role="tabpanel" id="p-sayur" aria-labelledby="t-sayur" hidden>
+      <div class="art" style="background:linear-gradient(135deg,#7BC043,#3A7D14)">Kebun</div>
+      <div class="info"><h3>Sayur &amp; Buah</h3><p>Cabai, tomat, kacang panjang, pisang, dan buah musiman dari kebun pekarangan. Dijual di pasar kecamatan dan langsung ke warga.</p>
+        <div class="facts"><div><b>— ha</b><small>Luas lahan</small></div><div><b>— jenis</b><small>Komoditas</small></div><div><b>— KK</b><small>Petani</small></div></div></div>
+    </div>
+  </section>
+
+  <section id="wisata">
+    <div class="sec-head">
+      <div><span class="eyebrow">Wisata Desa</span><h2 class="sec-title">Tempat yang layak dikunjungi.</h2></div>
+      <p>Nama dan keterangan wisata di bawah ini contoh. Ganti dengan destinasi nyata di Desa Toga.</p>
+    </div>
+    <div class="wisata">
+      <article class="spot big">
+        <svg viewBox="0 0 600 500" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+          <rect width="600" height="500" fill="#5FC9D6"/>
+          <circle cx="440" cy="120" r="60" fill="#FFB830"/>
+          <path d="M0 270 Q150 240 300 270 T600 260 V500 H0Z" fill="#2AA3B5"/>
+          <path d="M0 340 Q150 310 300 340 T600 330 V500 H0Z" fill="#E9D9A6"/>
+          <path d="M0 330 Q150 300 300 330 T600 320" fill="none" stroke="#fff" stroke-width="5" opacity=".7"/>
+        </svg>
+        <div><span class="pill">Pantai</span><h3>Pantai Desa</h3><p>Hamparan pasir dan sunset di sore hari. Cocok untuk keluarga.</p></div>
+      </article>
+      <article class="spot">
+        <svg viewBox="0 0 500 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+          <rect width="500" height="300" fill="#9AD8A0"/>
+          <path d="M0 200 L120 70 L230 190 L330 90 L500 220 V300 H0Z" fill="#3A9B5B"/>
+          <path d="M0 250 L150 160 L290 250 L420 170 L500 230 V300 H0Z" fill="#1F6E3F"/>
+        </svg>
+        <div><span class="pill">Alam</span><h3>Bukit Pandang</h3><p>Melihat desa dan laut dari ketinggian.</p></div>
+      </article>
+      <article class="spot">
+        <svg viewBox="0 0 500 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+          <rect width="500" height="300" fill="#FFD98A"/>
+          <g fill="#7A4B22"><ellipse cx="110" cy="200" rx="60" ry="28"/><ellipse cx="250" cy="170" rx="70" ry="32"/><ellipse cx="390" cy="205" rx="60" ry="28"/></g>
+          <path d="M0 260 Q125 230 250 260 T500 250 V300 H0Z" fill="#8CC152"/>
+        </svg>
+        <div><span class="pill">Edukasi</span><h3>Kebun Kakao</h3><p>Belajar mengolah kakao langsung dari petani.</p></div>
+      </article>
+    </div>
+  </section>
+
+  <section id="berita">
+    <div class="sec-head">
+      <div><span class="eyebrow">Berita Desa</span><h2 class="sec-title">Kabar terbaru dari Toga.</h2></div>
+      <p>Tiga berita contoh untuk menunjukkan tampilannya. <span class="chip-ex">contoh</span></p>
+    </div>
+    <div class="news">
+      <a class="post feat" href="#berita"><span class="cat">Pemerintahan</span><h3>Musyawarah Desa membahas rencana pembangunan tahun depan</h3><p>Warga dan perangkat desa berkumpul menyusun prioritas kegiatan, mulai dari jalan usaha tani sampai penerangan dusun.</p><time datetime="2026-10-10">10 Oktober 2026</time></a>
+      <a class="post" href="#berita"><span class="cat">Pertanian</span><h3>Pelatihan fermentasi kakao untuk kelompok tani</h3><p>Petani belajar menaikkan mutu biji kakao agar harga jual lebih baik.</p><time datetime="2026-10-03">3 Oktober 2026</time></a>
+      <a class="post" href="#berita"><span class="cat">Kesehatan</span><h3>Posyandu bulanan dibuka untuk balita dan lansia</h3><p>Pemeriksaan gratis dan penyuluhan gizi di balai desa.</p><time datetime="2026-09-27">27 September 2026</time></a>
+    </div>
+  </section>
+
+  <section id="galeri">
+    <div class="sec-head">
+      <div><span class="eyebrow">Galeri Foto</span><h2 class="sec-title">Desa lewat gambar.</h2></div>
+      <p>Tempat foto di bawah ini ilustrasi sementara. Foto asli desa bisa dipasang menggantikannya.</p>
+    </div>
+    <div class="gallery">
+      <figure class="shot"><svg viewBox="0 0 400 520"><rect width="400" height="520" fill="#7FD1C2"/><circle cx="290" cy="130" r="54" fill="#FFB830"/><path d="M0 330 Q120 290 240 330 T400 320 V520 H0Z" fill="#0B8A7A"/><path d="M0 420 Q120 390 240 420 T400 410 V520 H0Z" fill="#064E45"/></svg><figcaption>Sore di pantai</figcaption></figure>
+      <figure class="shot"><svg viewBox="0 0 400 300"><rect width="400" height="300" fill="#FFD98A"/><g fill="#FF6F59"><rect x="60" y="150" width="90" height="90"/><rect x="190" y="120" width="110" height="120"/></g><path d="M45 150 L105 100 L165 150Z M175 120 L245 60 L315 120Z" fill="#8A3B22"/><rect x="0" y="240" width="400" height="60" fill="#8CC152"/></svg><figcaption>Rumah warga</figcaption></figure>
+      <figure class="shot"><svg viewBox="0 0 400 400"><rect width="400" height="400" fill="#B9E8A0"/><g fill="#3A9B5B"><circle cx="90" cy="250" r="70"/><circle cx="220" cy="230" r="80"/><circle cx="330" cy="270" r="60"/></g><rect x="0" y="320" width="400" height="80" fill="#7A4B22"/></svg><figcaption>Kebun dan ladang</figcaption></figure>
+      <figure class="shot"><svg viewBox="0 0 400 480"><rect width="400" height="480" fill="#FFB4A6"/><circle cx="200" cy="170" r="70" fill="#FFF3E0"/><path d="M60 480 Q60 300 200 300 T340 480Z" fill="#FF6F59"/></svg><figcaption>Kegiatan warga</figcaption></figure>
+      <figure class="shot"><svg viewBox="0 0 400 300"><rect width="400" height="300" fill="#5FC9D6"/><path d="M0 200 Q100 160 200 200 T400 190 V300 H0Z" fill="#2AA3B5"/><path d="M60 210 L120 150 L180 210Z" fill="#fff"/><rect x="115" y="205" width="10" height="40" fill="#7A4B22"/></svg><figcaption>Perahu nelayan</figcaption></figure>
+      <figure class="shot"><svg viewBox="0 0 400 360"><rect width="400" height="360" fill="#C4F24B"/><g fill="#0B8A7A"><rect x="40" y="200" width="30" height="120"/><rect x="100" y="160" width="30" height="160"/><rect x="160" y="220" width="30" height="100"/><rect x="220" y="140" width="30" height="180"/><rect x="280" y="190" width="30" height="130"/></g></svg><figcaption>Panen raya</figcaption></figure>
+    </div>
+  </section>
+
+  <section id="kontak">
+    <div class="kontak">
+      <div class="big">
+        <span class="eyebrow" style="color:var(--lime)">Kontak Desa</span>
+        <h2>Mari <span>terhubung</span> dengan Desa Toga.</h2>
+        <p style="opacity:.9">Untuk pelayanan surat, pengaduan, atau kunjungan wisata, datanglah ke kantor desa pada jam pelayanan.</p>
+      </div>
+      <div class="rows">
+        <div class="row"><div><small>Alamat</small><span>Kantor Desa Toga, Kec. Ampibabo, Kab. Parigi Moutong, Sulawesi Tengah</span></div></div>
+        <div class="row"><div><small>Jam pelayanan</small><span>Senin–Jumat, 08.00–15.00 WITA</span></div></div>
+        <div class="row"><div><small>Telepon / WhatsApp</small><span id="tel">0812-0000-0000</span></div><button class="copy" type="button" data-copy="tel">Salin</button></div>
+        <div class="row"><div><small>Email</small><span id="mail">desatoga@example.id</span></div><button class="copy" type="button" data-copy="mail">Salin</button></div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <span>© 2026 Pemerintah Desa Toga</span>
+    <span>Kec. Ampibabo, Kab. Parigi Moutong</span>
+  </footer>
+</main>
+
+<script>
+(function () {
+  var menuBtn = document.getElementById('menuBtn');
+  var links = document.getElementById('links');
+  menuBtn.addEventListener('click', function () {
+    var open = links.classList.toggle('open');
+    menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  links.addEventListener('click', function (e) {
+    if (e.target.tagName === 'A') { links.classList.remove('open'); menuBtn.setAttribute('aria-expanded', 'false'); }
+  });
+
+  var root = document.documentElement;
+  document.getElementById('themeBtn').addEventListener('click', function () {
+    var dark = root.getAttribute('data-theme') === 'dark' ||
+      (!root.getAttribute('data-theme') && window.matchMedia('(prefers-color-scheme: dark)').matches);
+    root.setAttribute('data-theme', dark ? 'light' : 'dark');
+  });
+
+  var tabs = Array.prototype.slice.call(document.querySelectorAll('.tab'));
+  function pick(tab) {
+    tabs.forEach(function (t) {
+      var on = t === tab;
+      t.setAttribute('aria-selected', on ? 'true' : 'false');
+      document.getElementById(t.getAttribute('aria-controls')).hidden = !on;
+    });
+  }
+  tabs.forEach(function (t, i) {
+    t.addEventListener('click', function () { pick(t); });
+    t.addEventListener('keydown', function (e) {
+      if (e.key === 'ArrowRight') { var n = tabs[(i + 1) % tabs.length]; n.focus(); pick(n); }
+      if (e.key === 'ArrowLeft') { var p = tabs[(i - 1 + tabs.length) % tabs.length]; p.focus(); pick(p); }
+    });
+  });
+
+  document.querySelectorAll('.copy').forEach(function (b) {
+    b.addEventListener('click', function () {
+      var el = document.getElementById(b.getAttribute('data-copy'));
+      var done = function () { b.textContent = 'Tersalin'; setTimeout(function () { b.textContent = 'Salin'; }, 1600); };
+      var fallback = function () {
+        var r = document.createRange(); r.selectNodeContents(el);
+        var s = window.getSelection(); s.removeAllRanges(); s.addRange(r);
+        b.textContent = 'Dipilih'; setTimeout(function () { b.textContent = 'Salin'; }, 1600);
+      };
+      try { navigator.clipboard.writeText(el.textContent).then(done, fallback); } catch (err) { fallback(); }
+    });
+  });
+
+  var anchors = Array.prototype.slice.call(document.querySelectorAll('.links a'));
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (en.isIntersecting) {
+          var id = en.target.id;
+          anchors.forEach(function (a) { a.classList.toggle('on', a.getAttribute('href') === '#' + id); });
+        }
+      });
+    }, { rootMargin: '-40% 0px -55% 0px' });
+    document.querySelectorAll('main section').forEach(function (s) { io.observe(s); });
+  }
+})();
+</script>
+</body>
+</html>
